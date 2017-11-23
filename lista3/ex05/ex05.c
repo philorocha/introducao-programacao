@@ -15,6 +15,8 @@ int main()
     for (i = 0; i <= limite_superior; i += incremento) {
         printf("%d\t", i);
     }
+	
+	printf("\n");
 
     return 0;
 }
