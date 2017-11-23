@@ -10,7 +10,7 @@ int main()
 
 	for (i = 1; i < n; i++) {
 		for (j = 0; j < n; j++) {
-			if (i > 0 && j < i) {
+			if (j < i) {
 				printf("%d-%d", i, j);
 			} else {
 				break;
