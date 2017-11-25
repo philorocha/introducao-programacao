@@ -17,18 +17,14 @@ int main()
 
 
 int primo(int numero){
-    int divisores = 1, i;
+    int i, res = 1;
 
-    for (i = 2; i <= numero; i++) {
+    for (i = 2; i < numero; i++) {
         if (numero % i == 0) {
-            divisores++;
-            if (divisores > 2) break;
+            res = 0;
+            break;
         }
     }
 
-    if (divisores == 2) {
-        return 1;
-    }
-
-    return 0;
+    return res;
 }
